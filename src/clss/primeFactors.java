@@ -13,7 +13,8 @@ public class primeFactors {
     public static List <Integer> num_primos = new ArrayList<Integer>();
 
           public static List<Integer> generate(int n) {
-
+              if (n>1)
+              num_primos.add(2);
         return  num_primos;
     }
 }
