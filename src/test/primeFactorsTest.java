@@ -1,8 +1,10 @@
 package test;
 
 import clss.primeFactors;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,15 +18,14 @@ public class primeFactorsTest {
     @Before
     public void setUp() throws Exception {
         divisors =new ArrayList<Integer>();
-
     }
 
-    @org.junit.Test
+    @Test
     public void returnList_Vacia() throws Exception {
-        Assert.assertEquals(new ArrayList<Integer>(), primeFactors.generate(1));
+        Assert.assertEquals(addlist(), primeFactors.generate(1));
     }
 
-    @org.junit.Test
+    @Test
     public void num_2_resultado_2() throws Exception {
         Assert.assertEquals(addlist(2), primeFactors.generate(2));
     }
@@ -35,4 +36,6 @@ public class primeFactorsTest {
             divisors.add(c);
         return divisors;
     }
+
+
 }
