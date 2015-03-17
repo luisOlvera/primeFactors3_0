@@ -30,6 +30,11 @@ public class primeFactorsTest {
         assertEquals(addlist(2), 2);
     }
 
+    @Test
+    public void num_3_resultado_3() throws Exception {
+        assertEquals(addlist(3), 3);
+    }
+
     public List<Integer> addlist(int ... multiplicadores){
 
         for (int c :multiplicadores)

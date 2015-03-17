@@ -10,10 +10,12 @@ import java.util.List;
 
 public class primeFactors {
 
-    public static List<Integer> generate(int n) {
-              List <Integer> num_primos = new ArrayList<Integer>();
-              if (n>1)
-              num_primos.add(2);
+    public static List<Integer> generate(int numero) {
+        List <Integer> num_primos = new ArrayList<Integer>();
+            if (numero>1)
+                num_primos.add(numero);
+
+
         return  num_primos;
     }
 }
