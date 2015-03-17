@@ -22,12 +22,12 @@ public class primeFactorsTest {
 
     @Test
     public void returnList_Vacia() throws Exception {
-        Assert.assertEquals(addlist(), primeFactors.generate(1));
+        assertEquals(addlist(), 1);
     }
 
     @Test
     public void num_2_resultado_2() throws Exception {
-        Assert.assertEquals(addlist(2), primeFactors.generate(2));
+        assertEquals(addlist(2), 2);
     }
 
     public List<Integer> addlist(int ... multiplicadores){
@@ -37,5 +37,8 @@ public class primeFactorsTest {
         return divisors;
     }
 
+    public void  assertEquals(List<Integer> primos, int numero ){
+        Assert.assertEquals(primos, primeFactors.generate(numero));
 
+    }
 }
