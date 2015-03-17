@@ -2,6 +2,8 @@ package test;
 
 import clss.primeFactors;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.*;
 
 public class primeFactorsTest {
@@ -13,6 +15,6 @@ public class primeFactorsTest {
 
     @org.junit.Test
     public void returnNull() throws Exception {
-        assertEquals(null , primeFactors.generate(1));
+        assertEquals(new ArrayList<Integer>() , primeFactors.generate(1));
     }
 }
