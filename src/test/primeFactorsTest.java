@@ -14,7 +14,7 @@ public class primeFactorsTest {
     }
 
     @org.junit.Test
-    public void returnNull() throws Exception {
+    public void returnList_Vacia() throws Exception {
         assertEquals(new ArrayList<Integer>() , primeFactors.generate(1));
     }
 }

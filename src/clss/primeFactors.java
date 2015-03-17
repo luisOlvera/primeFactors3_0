@@ -10,10 +10,10 @@ import java.util.List;
 
 public class primeFactors {
 
-    public static List <Integer> multiplicadores = new ArrayList<Integer>();
+    public static List <Integer> num_primos = new ArrayList<Integer>();
 
           public static List<Integer> generate(int n) {
 
-        return  multiplicadores;
+        return  num_primos;
     }
 }
