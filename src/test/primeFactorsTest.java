@@ -47,7 +47,7 @@ public class primeFactorsTest {
 
     @Test
     public void num_8_resultado_2_2_2() throws Exception {
-        assertEquals(addlist(2,2,2),8);
+        assertEquals(addlist(2,2,2),8 );
     }
 
     public List<Integer> addlist(int ... multiplicadores){
