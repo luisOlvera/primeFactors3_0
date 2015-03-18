@@ -13,16 +13,14 @@ public class primeFactors {
     public static List<Integer> generate(int numero) {
         List <Integer> num_primos = new ArrayList<Integer>();
             if (numero>1) {
-                int n = 2;
-                while (n <= numero) {
-                    if (numero % n > 0)
-                    n++;
-                   else {
-                        num_primos.add(n);
-                        numero = numero / n;
+                for ( int divisor=2 ; numero>1;divisor++)
+                    if (numero % divisor == 0)
+                    {
+                           num_primos.add(divisor);
+                        numero = numero / divisor;
+                        divisor--;
                     }
-                }
-            }
-        return  num_primos;
+           }
+   return  num_primos;
     }
 }
