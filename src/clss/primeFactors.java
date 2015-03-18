@@ -12,15 +12,10 @@ public class primeFactors {
 
     public static List<Integer> generate(int numero) {
         List <Integer> num_primos = new ArrayList<Integer>();
-            if (numero>1) {
+            if (numero>1)
                 for ( int divisor=2 ; numero>1;divisor++)
-                    if (numero % divisor == 0)
-                    {
-                           num_primos.add(divisor);
-                        numero = numero / divisor;
-                        divisor--;
-                    }
-           }
-   return  num_primos;
+                    for ( ;numero % divisor == 0 ; numero /= divisor )
+                            num_primos.add(divisor);
+       return  num_primos;
     }
 }

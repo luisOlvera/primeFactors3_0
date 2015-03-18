@@ -50,6 +50,10 @@ public class primeFactorsTest {
         assertEquals(addlist(2,2,2),8 );
     }
 
+    @Test
+    public void num_12_resultado_2_2_3() throws Exception {
+        assertEquals(addlist(2,2,3),12);
+    }
     public List<Integer> addlist(int ... multiplicadores){
 
         for (int c :multiplicadores)
